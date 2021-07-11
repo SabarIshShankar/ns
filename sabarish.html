@@ -2,18 +2,17 @@
 <html lang="en">
 
 <head>
-	    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<meta charset="utf-8">
 
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;500&display=swap" rel="stylesheet">
 
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.js">
+	</script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+	</script>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
 	<link rel="stylesheet" href="w3.css">
@@ -25,9 +24,11 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="stylesheet" href="/build/tailwind.css">
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer>
+
 	</script>
 	<title>Work</title>
 	<script src="script.js">
+
 	</script>
 	<link href="//db.onlinewebfonts.com/c/066ce24dae3730ed6c648b09efaea93a?family=Acumin+Variable+Concept" rel="stylesheet" type="text/css"
 	/>
@@ -47,9 +48,13 @@
 	.a {
 		font-family: "DM Serif display";
 	}
-p, h3, h4{
-	font-family: DM Sans;
-}
+
+	p,
+	h3,
+	h4 {
+		font-family: DM Sans;
+	}
+
 	.button {
 		width: 150px;
 		background-color: #d1d8ff;
@@ -70,7 +75,6 @@ p, h3, h4{
 		background-color: black;
 		color: white;
 		border: 2px solid black;
-		font-family: Circular spotify Tx T Book;
 		font-weight: light;
 		border-radius: 3px;
 
@@ -78,8 +82,8 @@ p, h3, h4{
 
 	.button2:hover {
 		background-color: white;
-		color: black;
-		border: 2px solid white;
+
+
 	}
 
 	::selection {
@@ -88,54 +92,106 @@ p, h3, h4{
 
 
 	.container2 {
-  position: relative;
-  width: 50%;
-}
+		position: relative;
+		width: 50%;
+	}
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+	.image {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
+	.overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #008CBA;
+		overflow: hidden;
+		width: 100%;
+		height: 0;
+		transition: .5s ease;
+	}
 
-.container2:hover .overlay {
-  height: 100%;
-}
+	.container2:hover .overlay {
+		height: 100%;
+	}
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+	.text {
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
 
+	.button {
+		width: 180px;
+		background-color: #3175e4;
+		border: none;
+		color: white;
+		padding: 16px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		transition-duration: 0.4s;
+		cursor: pointer;
+	}
+
+	.button2 {
+		background-color: white;
+		color: black;
+
+		font-family: DM Serif display;
+		border-radius: 3px;
+		background: linear-gradient(145deg, #070045, #090052);
+		box-shadow: 13px 13px 26px #070041,
+		-13px -13px 26px #090059;
+
+		border-radius: 10px;
+background: #f0f0f0;
+box-shadow:  -26px 26px 52px #d6d6d6,
+             26px -26px 52px #ffffff;
+	}
+
+	.button2:hover {
+		border-radius: 33px;
+		background: linear-gradient(225deg, #070045, #090052);
+		box-shadow: -13px 13px 26px #070041,
+		13px -13px 26px #090059;
+
+	background: linear-gradient(145deg, #f0f0f0, #f0f0f0);
+		box-shadow: -13px 13px 26px #d6d6d6,
+		13px -13px 26px #ffffff;
+	}
+
+	.w-black {
+		background-color: #f0f0f0;
+	}
+
+	.nav-link:hover{
+		background-color: #f0f0f0;
+		box-radius: 20px;
+
+
+	}
 </style>
 
 
 
-		<div class="w3-content" style="max-width:1100px">
-		<div class="nav navbar-1 fontnav">
-			<input type="checkbox" id="nav-check">
+<div class="w3-content" style="max-width:1100px">
+	<div class="nav navbar-1 fontnav">
+		<input type="checkbox" id="nav-check">
   <div class="nav-header">
     <div class="nav-title logoto">
-      <a>NextStage</a>
+      <a>Sabarish</a>
     </div>
   </div>
   <div class="nav-btn">
@@ -147,11 +203,10 @@ p, h3, h4{
   </div>
 
   
-  <div class="nav-links">
-    <a href="//github.io/jo_geek" target="_blank">About Us</a>
-    <a href="http://stackoverflow.com/users/4084003/" target="_blank">Services</a>
-    <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Our Team</a>
-		   <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Contact</a>
+  <div class="nav-links w3-center">
+    <a class="nav-link" href="" target="_blank">Work</a>
+    <a class="nav-link" href="" target="_blank">Dribbble</a>
+		   <a class="nav-link" href="" target="_blank">Contact</a>
 
   </div>
 </div>
@@ -163,24 +218,24 @@ p, h3, h4{
 <div class="w3-content " style="max-width:900px">
 
   <!-- About Section -->
-  <div class="w3-row w3-padding-16 " id="">
+  <div class="w3-row w3-padding-16 w-black" id="">
 
 
-    <div class="w3-padding-small">
+    <div class="w3-padding-small ">
 
 			  <header class="w3-container w3-left w3-padding-16 ">
     <h1 class="w3-xxxlarge">Your new way forward</h1>
 		<h3>Our sourcing and development strengths will steer your business ahead</h3>
     <h5></h5>
 		<a href="#about"><button type="button"  class="button button2" >About Us</button></a>
-				<a href="#contact"><button type="button"  class="button button2" >Contact us</button></a>
+
 
   </header>
       
     </div>
   </div>
 
-	<div class="w3-row w3-padding-32" id="about">
+<!--	<div class="w3-row w3-padding-32" id="about">
     <div class="w3-col l6 w3-padding-large">
       <h2 class="w3-center">NextStage is a young company, creating new approaches</h2><br>
       <h4></h4>
@@ -196,7 +251,7 @@ p, h3, h4{
       <p class="w3-text-grey"></p><br>
        
     </div>
-</div>
+</div>-->
 
     <div class="container mx-auto px-4"> 
                 
