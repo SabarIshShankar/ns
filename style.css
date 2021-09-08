@@ -137,7 +137,7 @@ body {
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(119, 119, 119, 0.3);
+    background-color: rgba(255, 66, 66, 0.3);
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -345,7 +345,7 @@ color: #bdf8ff;
 }
 @media (max-width: 767px) {
   .navicon {
-    width: 1.125em;
+    width: 1.5em;
     height: .125em;
   }
 
@@ -358,6 +358,7 @@ color: #bdf8ff;
     transition: all .5s ease-out;
     content: '';
     background: #3D4852;
+		
   }
 
   .navicon::before {
@@ -382,10 +383,13 @@ color: #bdf8ff;
 
   .menu-btn:checked ~ .menu-icon .navicon::before {
     transform: rotate(-45deg);
+		background-color: rgb(174, 216, 235);
+
   }
 
   .menu-btn:checked ~ .menu-icon .navicon::after {
     transform: rotate(45deg);
+		background-color: rgb(174, 216, 235);
   }
 
   .menu-btn:checked ~ .menu-icon .navicon::before,
