@@ -138,6 +138,7 @@ h4{
 
 		<nav class="nav flex flex-wrap items-center justify-between px-4">
   <div class=" flex flex-no-shrink items-center py-3 text-grey-darkest ">
+	<a href="/index.html">
 	<div  class="center large-text">
 		
 <svg width="60" height="60" viewBox="0 0 240 117" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,6 +148,7 @@ h4{
 
 
 			</div>
+			</a>
   </div>
 
 
