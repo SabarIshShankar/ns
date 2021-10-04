@@ -5,140 +5,53 @@ headerTemplate.innerHTML = `<link rel="stylesheet" href="/style.css">
 
 
 <style>
-	a {
-		text-decoration: none;
-	}
-
-
-
-	p,
-	h1,
 	body,
-	html,
+	h1,
 	h2,
 	h3,
 	h4,
+	p,
 	h5,
-	h6 {
-		font-family: DM Sans, Arial, Helvetica;
+	textarea,
+	button,
+	form {
+		font-family: Arial;
 		font-weight: 400;
 	}
-	h3{
-		font-family: Arimo;
-		font-weight: 700;
-	}
 
-	h6{
-		font-family: DM Sans;
-		font-weight: 500;
-	}
-
-	.w3-card {
-		border-radius: 2px;
-
-	}
-
-	.secrec {
-		background-image: url("");
-		background-repeat: no-repeat, repeat;
-		background-color: #ff;
-
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-
+	/*body,h1,h2,h3,h4,p,h5,textarea,button,form{
+			font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+			font-colour: white;*/
 	}
 
 	html {
 		scroll-behavior: smooth;
 	}
 
-	.font-bold {
-		font-family: DM Sans;
-		font-weight: 700;
-	}
-
-
-	@media (max-width: 767px) {
-		.navicon {
-			width: 1.125em;
-			height: .125em;
-		}
-
-
-		.navicon::before,
-		.navicon::after {
-			display: block;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			transition: all .4s ease-out;
-			content: '';
-			background: black;
-		}
-
-		.navicon::before {
-			top: 5px;
-		}
-		h3{
-			color: #1e1e1e;
-		}
-		.navicon::after {
-			top: -5px;
-			-webkit-user-select: none;
-		}
-
-		.menu-btn:not(:checked)~.menu {
-			display: none;
-		}
-
-		.menu-btn:checked~.menu {
-			display: block;
-		}
-
-		.menu-btn:checked~.menu-icon .navicon {
-			background: transparent;
-		}
-
-		.menu-btn:checked~.menu-icon .navicon::before {
-			transform: rotate(-45deg);
-		}
-
-		.menu-btn:checked~.menu-icon .navicon::after {
-			transform: rotate(45deg);
-		}
-
-		.menu-btn:checked~.menu-icon .navicon::before,
-		.menu-btn:checked~.menu-icon .navicon::after {
-			top: 0;
-		}
-	}
-
-	.main-menu-items li a {
-		padding-bottom: 10px;
-		color: rgb(0, 0, 0);
-		font-family: "Manrope", sans-serif !important;
+	body {
 		font-size: 16px;
-		margin-right: 24px !important;
-		-webkit-transition: 0.3s all linear;
-		transition: 0.3s all linear;
-		position: relative;
+	}
+
+	.w3-half img {
+		margin-bottom: -6px;
+		margin-top: 16px;
+		opacity: 0.8;
+		cursor: pointer
 	}
 
 	.button2 {
 		background-color: black;
 		color: white;
 
-		font-family: DM Sans;
+		font-family: Work Sans;
 		font-weight: light;
 		border-radius: 3px;
 
 	}
 
 	.button {
-		width: 160px;
-		background-color: #0029ff;
+		width: 200px;
+		background-color: #006aff;
 		/* Green */
 		border: none;
 		color: white;
@@ -158,63 +71,65 @@ headerTemplate.innerHTML = `<link rel="stylesheet" href="/style.css">
 
 	}
 
-	.text-true-blue {
-		color: #0029ff;
+	.w3-half img:hover {
+		opacity: 1
 	}
 
-	.bg-white {
-		background-image: url('');
-		background-repeat: no-repeat;
-		background-size: auto;
-		background-attachment: fixed;
-	}
-
-	.headl {
-		width: 100%;
+	.w3-button {
+		background-color: white;
+		border: none;
+		color: black;
+		padding: 16px 32px;
 		text-align: center;
-		border-bottom: 3px solid #C9F2FF;
-		line-height: 0.1em;
-		margin: 30px 0 10px;
+		font-size: 16px;
+		margin: 4px 2px;
+		opacity: 0.6;
+		transition: 0.3s;
 	}
 
-	h6 span {
-		background: #fff;
-		padding: 0 10px;
+	.boldtext, .font-semibold {
+		font-family: 'Work Sans';
+		font-weight: 500;
 	}
-
-	::selection {
-		color: #efc;
-		background: blue;
+	html{
+		scroll-behavior: smooth;
 	}
-
-	.uinput{
-  outline:none;
+	.center {
+  margin: auto;
+	text-align: center;
 }
-
-.uinput:focus {
-  outline: 0;
-  outline-color: transparent;
-  outline-style: none;
-	-webkit-tap-highlight-color: transparent;
-}
-
-.foo:active, .foo:focus {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-select:focus, input:focus, textarea:focus {
-  outline: 0;
-  outline-color: transparent;
-  outline-style: none;
+.large-text{
+	font-size: 30px;
 }
 
 
 
-#add:active {
-    opacity: 0.85;
-    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+.int li {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: auto;
 }
+.int li a {
+	font-size: 1rem;
+  color: #000000;
+  transition: 0.1s border linear;
+}
+.int li a:hover {
+	font-size: 1rem;
+  border-bottom: blue 4px solid;
+}
+
+.menu{
+	transition: 0.3s;
+}
+::selection {
+  color: black;
+  background: #8E92FA;
+}
+h4{
+	font-weight: 500
+}
+
 
 </style>
 
