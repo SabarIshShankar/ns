@@ -2,7 +2,8 @@ const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `<link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
-
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 	body,
@@ -15,7 +16,7 @@ headerTemplate.innerHTML = `<link rel="stylesheet" href="/style.css">
 	textarea,
 	button,
 	form {
-		font-family: Arial;
+		font-family: Inter;
 		font-weight: 400;
 	}
 
@@ -101,21 +102,23 @@ headerTemplate.innerHTML = `<link rel="stylesheet" href="/style.css">
 .large-text{
 	font-size: 30px;
 }
+.east{
+	font-family: DM Serif Display;
+}
 
 
 
 .int li {
-  font-size: 1rem;
-  text-transform: uppercase;
+  font-size: 2rem;
   margin: auto;
 }
 .int li a {
-	font-size: 1rem;
+	font-size: 1.2rem;
   color: #000000;
   transition: 0.1s border linear;
 }
 .int li a:hover {
-	font-size: 1rem;
+	font-size: 1.2rem;
   border-bottom: blue 4px solid;
 }
 
@@ -139,12 +142,9 @@ h4{
 		<nav class="nav flex flex-wrap items-center justify-between px-4">
   <div class=" flex flex-no-shrink items-center py-3 text-grey-darkest ">
 	<a href="/index.html">
-	<div  class="center large-text">
+	<div  class="center large-text east">
 		
-<svg width="60" height="60" viewBox="0 0 240 117" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M123 24H216.021" stroke="#0007A6" stroke-width="47" stroke-linecap="round"/>
-<path d="M24 93H123.005" stroke="#0007A6" stroke-width="47" stroke-linecap="round"/>
-</svg>
+NextStage
 
 
 			</div>
@@ -164,30 +164,22 @@ h4{
   <ul class="menu md:border-none flex justify-end list-reset m-0 w-full md:w-auto right bg-white int">
     
     <li class=" md:border-none">
-      <a href="/business" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">BUSINESS</a>
+      <a href="/about" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</a>
     </li>
 		<li class=" md:border-none">
-      <a href="/case-studies" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">CASE STUDIES</a>
+      <a href="/services" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Our services</a>
     </li>
 		<li class=" md:border-none">
-      <a href="/research" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">RESEARCH</a>
+      <a href="/work" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Work</a>
     </li>
 		<li class=" md:border-none">
-      <a href="/journal" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">JOURNAL</a>
+      <a href="/contact" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Contact</a>
     </li>
 		<li class=" md:border-none">
 		<div class="flex flex-wrap md:w-auto w-full md:mb-0 mb-4">
 
 
-              <div class="flex sm:w-auto sm:mt-0 mt-4 sm:mb-0 mb-2 w-full sm:justify-start justify-center">
-
-              <a href="https://instagram.com/nextstage.in" target="_blank" class="text-gray-600">
-              <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169.063 169.063">
-                <path d="M122.406 0H46.654C20.929 0 0 20.93 0 46.655v75.752c0 25.726 20.929 46.655 46.654 46.655h75.752c25.727 0 46.656-20.93 46.656-46.655V46.655C169.063 20.93 148.133 0 122.406 0zm31.657 122.407c0 17.455-14.201 31.655-31.656 31.655H46.654C29.2 154.063 15 139.862 15 122.407V46.655C15 29.201 29.2 15 46.654 15h75.752c17.455 0 31.656 14.201 31.656 31.655v75.752z"/>
-                <path d="M84.531 40.97c-24.021 0-43.563 19.542-43.563 43.563 0 24.02 19.542 43.561 43.563 43.561s43.563-19.541 43.563-43.561c0-24.021-19.542-43.563-43.563-43.563zm0 72.123c-15.749 0-28.563-12.812-28.563-28.561 0-15.75 12.813-28.563 28.563-28.563s28.563 12.813 28.563 28.563c0 15.749-12.814 28.561-28.563 28.561zM129.921 28.251c-2.89 0-5.729 1.17-7.77 3.22-2.051 2.04-3.23 4.88-3.23 7.78 0 2.891 1.18 5.73 3.23 7.78 2.04 2.04 4.88 3.22 7.77 3.22 2.9 0 5.73-1.18 7.78-3.22 2.05-2.05 3.22-4.89 3.22-7.78 0-2.9-1.17-5.74-3.22-7.78-2.04-2.05-4.88-3.22-7.78-3.22z"/>
-              </svg>
-            </a>
-             </div>
+              
             </div>
 						</li>
     
